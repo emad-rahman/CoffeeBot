@@ -14,6 +14,22 @@ module.exports = {
             const config = LoadLocalConfig();
             return config.tenorApiKey;
         }
+    },
+    DiscordServerId: function() {
+        if(IsProd()) {
+            return process.env.DISCORD_SERVER_ID;
+        } else {
+            const config = LoadLocalConfig();
+            return config.discordServerId;
+        }
+    },
+    DiscordClientId: function() {
+        if(IsProd()) {
+            return process.env.DISCORD_CLIENT_ID;
+        } else {
+            const config = LoadLocalConfig();
+            return config.discordClientId;
+        }
     }
 }
 
