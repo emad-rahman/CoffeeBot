@@ -4,7 +4,7 @@ module.exports = {
         const Gif = require('./Gif');
 
         // var scheduledMessageCoffeeAlert = new Cron.CronJob('5 0 14 * * 1-5', () => {
-        var scheduledMessageCoffeeAlert = new Cron.CronJob('5 39 16 * * *', () => {
+        var scheduledMessageCoffeeAlert = new Cron.CronJob('5 2 17 * * *', () => {
             let server = client.guilds.cache.get(serverId);
             let channel = server.channels.cache.get(clientId);
 
