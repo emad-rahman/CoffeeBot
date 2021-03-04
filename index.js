@@ -9,4 +9,10 @@ client.once('ready', () => {
     CoffeeAlert.CreateCoffeeAlertJob(client, Config.DiscordServerId(), Config.DiscordClientId()).start();
 });
 
+client.on('message', msg => {
+    if (msg.mentions.has(client.user)) {
+        msg.channel.send("Hi, I'm stand up bot!");
+    }
+});
+
 client.login(Config.BotToken());
