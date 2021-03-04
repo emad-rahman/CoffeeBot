@@ -11,7 +11,7 @@ client.once('ready', () => {
 
 client.on('message', msg => {
     if (msg.mentions.has(client.user)) {
-        msg.channel.send("Hi, I'm stand up bot!");
+        msg.channel.send("Hi, I'm coffee bot!");
     }
 });
 
